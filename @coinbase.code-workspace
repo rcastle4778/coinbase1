@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"git.openRepositoryInParentFolders": "always",
+		"less.lint.important": "warning"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": ".NET Core Launch (console)",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "build",
+				"program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+				"args": [],
+				"cwd": "${workspaceFolder}",
+				"stopAtEntry": false,
+				"console": "internalConsole"
+			},
+			{
+				"type": "node-terminal",
+				"name": "Run Script: dev",
+				"request": "launch",
+				"command": "npm run dev",
+				"cwd": "${workspaceFolder}\\onchainkit"
+			}
+		]
+	}
+}
